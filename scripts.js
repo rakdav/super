@@ -32,8 +32,8 @@ function Min()
 {
     let a=parseInt(document.getElementById("n1").value);
     let b=parseInt(document.getElementById("n2").value);
-    if(a>b) result.innerHTML=b.toString();
-    else result.innerHTML=a.toString();
+    if(a>b) result.innerText=b.toString();
+    else result.innerText=a.toString();
 }
 
 
