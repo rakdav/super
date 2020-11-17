@@ -36,21 +36,31 @@
 //     else result.innerText=a.toString();
 // }
 let main = document.getElementById("main");
+
+
 for (var i=1;i<=8;i++)
 {
-    var elem = document.createElement("span");
-    for (var j=1;j<=8;j++) {
-        var ch = document.createElement("div");
-        if((i+j)%2==0) {
-            ch.className = "black";
-        }
-        else {
-            ch.className="white";
-        }
-        elem.appendChild(ch);
+    let elem = document.createElement("span");
+    for (var j=1;j<=8;j++)
+    {
+            let ch = document.createElement("div");
+            // if(j==1)
+            // {
+            //     ch.className = "white";
+            //     ch.innerText=i;
+            // }
+            // else {
+                if ((i + j) % 2 == 0) {
+                    ch.className = "black";
+                } else {
+                    ch.className = "white";
+                }
+            // }
+            elem.appendChild(ch);
     }
     main.appendChild(elem);
 }
+
 
 
 
