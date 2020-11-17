@@ -1,11 +1,16 @@
+span{
+    display: inline-block;
+}
 div.white{
     width: 100px;
     height: 100px;
     background: white;
+    border: 1px solid black;
 }
 
 div.black{
     width: 100px;
     height: 100px;
     background: black;
+    border: 1px solid black;
 }

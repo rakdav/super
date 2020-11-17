@@ -35,22 +35,21 @@
 //     if(a>b) result.innerText=b.toString();
 //     else result.innerText=a.toString();
 // }
+let main = document.getElementById("main");
 for (var i=1;i<=8;i++)
 {
-    let main = document.getElementById("main");
-    var elem = document.createElement("div");
-
+    var elem = document.createElement("span");
     for (var j=1;j<=8;j++) {
-
         var ch = document.createElement("div");
         if((i+j)%2==0) {
-            elem.className = "black";
+            ch.className = "black";
         }
         else {
-            elem.className="white";
+            ch.className="white";
         }
         elem.appendChild(ch);
     }
+    main.appendChild(elem);
 }
 
 
